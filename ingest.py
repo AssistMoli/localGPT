@@ -33,7 +33,7 @@ def load_single_document(file_path: str) -> Document:
         loader_class = DOCUMENT_MAP.get(file_extension)
         if loader_class:
             file_log(file_path + " loaded.")
-            loader = loader_class(file_path)
+            loader = loader_class(file_path, encoding='UTF-8')
         else:
             file_log(file_path + " document type is undefined.")
             raise ValueError("Document type is undefined")
