@@ -115,8 +115,8 @@ def set_variables(url, model):
 
 
 
-MODEL_ID = "TheBloke/Llama-2-13b-Chat-GGUF"
-MODEL_BASENAME = "llama-2-13b-chat.Q4_K_M.gguf"
+MODEL_ID =         "AssistMoli/test"                          "TheBloke/Llama-2-13b-Chat-GGUF"
+MODEL_BASENAME =  "model-00001-of-00003.safetensors"   # "llama-2-13b-chat.Q4_K_M.gguf"
 
 
 
