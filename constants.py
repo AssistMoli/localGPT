@@ -100,17 +100,17 @@ EMBEDDING_MODEL_NAME = "hkunlp/instructor-large"  # Uses 1.5 GB of VRAM (High Ac
 # Define global variables
 MODEL_ID = ""
 MODEL_BASENAME = ""
-import click
-@click.command()
-@click.option('--url', type=str, help='url')
-@click.option('--model', type=str, help='model')
-def set_variables(url, model):
-    global MODEL_ID, MODEL_BASENAME
-    # Assign values to global variables
-    MODEL_ID = url
-    MODEL_BASENAME = model
-    click.echo(f'MODEL_ID set to: {MODEL_ID}')
-    click.echo(f'MODEL_BASENAME set to: {MODEL_BASENAME}')
+#import click
+#@click.command()
+#@click.option('--url', type=str, help='url')
+#@click.option('--model', type=str, help='model')
+#def set_variables(url, model):
+#    global MODEL_ID, MODEL_BASENAME
+#    # Assign values to global variables
+#    MODEL_ID = url
+#    MODEL_BASENAME = model
+#    click.echo(f'MODEL_ID set to: {MODEL_ID}')
+#    click.echo(f'MODEL_BASENAME set to: {MODEL_BASENAME}')
 #set_variables()
 
 
