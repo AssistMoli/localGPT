@@ -100,12 +100,22 @@ EMBEDDING_MODEL_NAME = "hkunlp/instructor-large"  # Uses 1.5 GB of VRAM (High Ac
 # MODEL_ID = "TheBloke/Llama-2-13b-Chat-GGUF"
 # MODEL_BASENAME = "llama-2-13b-chat.Q4_K_M.gguf"
 
+# Define global variables
+MODEL_ID = ""
+MODEL_BASENAME = ""
 import click
 @click.command()
 @click.option('--url', type=str, help='url')
 @click.option('--model', type=str, help='model')
-MODEL_ID       =  url                #"TheBloke/Llama-2-7b-Chat-GGUF"
-MODEL_BASENAME =  model                 # "llama-2-7b-chat.Q4_K_M.gguf"
+def set_variables(url, model):
+    global MODEL_ID, MODEL_BASENAME
+    # Assign values to global variables
+    MODEL_ID = url
+    MODEL_BASENAME = model
+    click.echo(f'MODEL_ID set to: {MODEL_ID}')
+    click.echo(f'MODEL_BASENAME set to: {MODEL_BASENAME}')
+set_variables()
+
 
 # MODEL_ID = "TheBloke/Mistral-7B-Instruct-v0.1-GGUF"
 # MODEL_BASENAME = "mistral-7b-instruct-v0.1.Q8_0.gguf"
