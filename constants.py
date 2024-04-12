@@ -100,8 +100,12 @@ EMBEDDING_MODEL_NAME = "hkunlp/instructor-large"  # Uses 1.5 GB of VRAM (High Ac
 # MODEL_ID = "TheBloke/Llama-2-13b-Chat-GGUF"
 # MODEL_BASENAME = "llama-2-13b-chat.Q4_K_M.gguf"
 
-MODEL_ID =   "TheBloke/Chinese-Alpaca-2-7B-GGUF" #"TheBloke/Llama-2-7b-Chat-GGUF"
-MODEL_BASENAME =  "chinese-alpaca-2-7b.Q2_K.gguf"           # "llama-2-7b-chat.Q4_K_M.gguf"
+import click
+@click.command()
+@click.option('--url', type=str, help='url')
+@click.option('--model', type=str, help='model')
+MODEL_ID       =  f"{url}"                  #"TheBloke/Llama-2-7b-Chat-GGUF"
+MODEL_BASENAME =  f"{model}"                 # "llama-2-7b-chat.Q4_K_M.gguf"
 
 # MODEL_ID = "TheBloke/Mistral-7B-Instruct-v0.1-GGUF"
 # MODEL_BASENAME = "mistral-7b-instruct-v0.1.Q8_0.gguf"
