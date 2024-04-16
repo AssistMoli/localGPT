@@ -115,8 +115,8 @@ MODEL_BASENAME = ""
 
 
 
-MODEL_ID =         "FlagAlpha/Llama2-Chinese-7b-Chat"                    #      "TheBloke/Llama-2-13b-Chat-GGUF"
-MODEL_BASENAME =  "pytorch_model-00001-of-00002.bin"   # "llama-2-13b-chat.Q4_K_M.gguf"
+MODEL_ID =         "FlagAlpha/Llama2-Chinese-7b-Chat"                         #      "TheBloke/Llama-2-13b-Chat-GGUF"
+MODEL_BASENAME =   None                 # "pytorch_model-00001-of-00002.bin"   # "llama-2-13b-chat.Q4_K_M.gguf"
 
 
 
